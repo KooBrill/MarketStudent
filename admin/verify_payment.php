@@ -54,9 +54,12 @@ require_once __DIR__ . '/../includes/admin_nav.php';
             
             <div class="verify-proof">
               <p><strong>Bukti Pembayaran:</strong></p>
-              <?php if ($order['payment_proof']): ?>
-                <a href="<?= SITE_URL ?>/<?= $order['payment_proof'] ?>" target="_blank">
-                  <img src="<?= SITE_URL ?>/<?= $order['payment_proof'] ?>" alt="Bukti bayar" class="proof-image">
+              <?php 
+                $proofFile = basename($order['payment_proof']);
+                $proofUrl = SITE_URL . '/serve_payment.php?file=' . urlencode($proofFile);
+              ?>
+                <a href="<?= $proofUrl ?>" target="_blank">
+                  <img src="<?= $proofUrl ?>" alt="Bukti bayar" class="proof-image">
                 </a>
               <?php else: ?>
                 <p class="text-muted">Belum diupload</p>

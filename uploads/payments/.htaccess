@@ -1,0 +1,13 @@
+# Blokir akses langsung ke bukti pembayaran
+# Harus diakses lewat PHP script (dengan pengecekan login)
+<FilesMatch "\.(jpg|jpeg|png|webp|gif)$">
+    Require all denied
+</FilesMatch>
+
+# Kecuali QRIS (harus bisa diakses semua orang)
+<Files "qris.png">
+    Require all granted
+</Files>
+<Files "qris.jpg">
+    Require all granted
+</Files>
