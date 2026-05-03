@@ -23,7 +23,7 @@ define('SMTP_PORT',       (int)(getenv('SMTP_PORT') ?: 587));
 define('SMTP_SECURE',     getenv('SMTP_SECURE') ?: 'tls');
 define('SMTP_USERNAME',   getenv('SMTP_USERNAME') ?: '');
 define('SMTP_PASSWORD',   getenv('SMTP_PASSWORD') ?: '');
-define('SMTP_FROM_EMAIL', getenv('SMTP_FROM_EMAIL') ?: 'noreply@marketstudent.com');
+define('SMTP_FROM_EMAIL', getenv('SMTP_FROM_EMAIL') ?: 'minad@marstud.shop');
 define('SMTP_FROM_NAME',  getenv('SMTP_FROM_NAME') ?: 'MarketStudent');
 
 try {

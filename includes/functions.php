@@ -150,7 +150,7 @@ function uploadFile($file, $directory = 'uploads/products/', $maxSize = 5242880)
  * From diambil dari SMTP_FROM_* atau fallback noreply.
  */
 function sendMail($to, $subject, $bodyPlain) {
-    $fromEmail = defined('SMTP_FROM_EMAIL') ? SMTP_FROM_EMAIL : 'noreply@marketstudent.com';
+    $fromEmail = defined('SMTP_FROM_EMAIL') ? SMTP_FROM_EMAIL : 'minad@marstud.shop';
     $fromName  = defined('SMTP_FROM_NAME')  ? SMTP_FROM_NAME  : SITE_NAME;
 
     if (defined('SMTP_ENABLED') && SMTP_ENABLED && !empty(SMTP_HOST) && !empty(SMTP_USERNAME)) {
