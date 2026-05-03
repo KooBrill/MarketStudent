@@ -13,7 +13,7 @@ define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
 
 define('SITE_NAME', 'MarketStudent');
-define('SITE_URL', getenv('SITE_URL') ?: 'https://market.muimsa.me');
+define('SITE_URL', getenv('SITE_URL') ?: 'https://marstud.shop');
 define('SERVICE_FEE', 3500);
 
 // ── SMTP (kosongkan untuk pakai mail() atau simulasi) ──
